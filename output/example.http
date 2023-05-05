@@ -1,0 +1,64 @@
+
+### Get scores
+GET http://localhost:8080/scores
+
+### Get score by id
+GET http://localhost:8080/score/1
+
+### Insert score
+POST http://localhost:8080/score
+Content-Type: application/json
+
+{
+  "playerName": "John",
+  "score": 100,
+  "time": 2050
+}
+
+### Insert scores
+POST http://localhost:8080/scores
+Content-Type: application/json
+
+[{"playerName": "John", "score": 100, "time": 2050},
+{"playerName": "Linda", "score": 80, "time": 1800},
+{"playerName": "Mark", "score": 120, "time": 3000},
+{"playerName": "Emily", "score": 95, "time": 2200},
+{"playerName": "David", "score": 75, "time": 1700},
+{"playerName": "Sarah", "score": 110, "time": 2500},
+{"playerName": "Jake", "score": 90, "time": 1950},
+{"playerName": "Alice", "score": 85, "time": 2100},
+{"playerName": "Tom", "score": 115, "time": 2900},
+{"playerName": "Katie", "score": 70, "time": 1600},
+{"playerName": "Oliver", "score": 130, "time": 3200},
+{"playerName": "Grace", "score": 105, "time": 2350},
+{"playerName": "Max", "score": 98, "time": 2250},
+{"playerName": "Sophie", "score": 82, "time": 1900},
+{"playerName": "William", "score": 93, "time": 2300}]
+
+### Update score
+PUT http://localhost:8080/score
+Content-Type: application/json
+
+{
+  "id": 1,
+  "playerName": "Carl",
+  "score": 160,
+  "time": 1876
+}
+
+### Delete score by id
+DELETE http://localhost:8080/score/2
+
+###
+PATCH http://localhost:8080/score
+Content-Type: application/json
+
+{
+  "id": 0,
+  "playerName": "John",
+  "score": 100,
+  "time": 2050
+}
+
+### Get leaderboard
+GET http://localhost:8080/leaderboard

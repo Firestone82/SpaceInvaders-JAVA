@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.devfire.java2.spaceInvaders.client.object.controller.list.GameController">
+   <center>
+      <Canvas fx:id="gameCanvas" height="500.0" width="450.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
